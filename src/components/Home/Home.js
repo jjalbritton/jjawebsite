@@ -15,7 +15,7 @@ const Title = styled.h1`
 
 const Subtitle = styled.p`
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
 
 const Button = styled.a`
@@ -25,15 +25,20 @@ const Button = styled.a`
   font-size: 1.25rem;
   text-decoration: none;
   border-radius: 5px;
+  width: 250px;
+  height: 60px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 10rem;
   &:hover {
     background-color: #ffaa00;
   }
 `;
 
 const MainImage = styled.img`
-  width: 40%;
+  width: 35%;
   height: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-radius: 10px;
 `;
 
@@ -46,6 +51,7 @@ function Home() {
       <Subtitle>Singer, guitarist, solo entertainer in Bradenton, FL.</Subtitle>
       <Subtitle>941-209-8340</Subtitle>
       <Subtitle>jj@jjalbritton.com</Subtitle>
+      <Button href="https://www.youtube.com/watch?v=QAmZSf2WTgw">Demo Video</Button>
       <Button href="/calendar">View My Calendar</Button>
     </HomeContainer>
   );
