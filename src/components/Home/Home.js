@@ -51,7 +51,7 @@ function Home() {
       <Subtitle>Singer, guitarist, solo entertainer in Bradenton, FL.</Subtitle>
       <Subtitle>941-209-8340</Subtitle>
       <Subtitle>jj@jjalbritton.com</Subtitle>
-      <Button href="https://www.youtube.com/watch?v=QAmZSf2WTgw">Demo Video</Button>
+      <Button href="https://youtu.be/AeQWwXxScQs">Demo Video</Button>
       <Button href="/calendar">View My Calendar</Button>
     </HomeContainer>
   );
