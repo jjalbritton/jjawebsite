@@ -12,7 +12,6 @@ const HomeContainer = styled.div`
 const MobileDiv = styled.div`
   background-color: #572932;
   color: #DFD1A7;
-  padding: 0px 0px 0px 0px;
   text-align: center;
 `;
 
@@ -67,9 +66,16 @@ const MainImage = styled.img`
   border-radius: 10px;
 `;
 
+const MobileImage = styled.img`
+  width: 40%;
+  height: auto;
+  margin-bottom: 1rem;
+`;
+
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const imageUrl = 'https://s3.amazonaws.com/jjalbritton.media/pics/cropped.jpg';
+  const demoVidUrl = "https://youtu.be/AeQWwXxScQs";
 
   useEffect(() => {
     const checkMobile = () => {
@@ -92,12 +98,12 @@ function Home() {
     <HomeContainer>
       {isMobile ? (
         <MobileDiv>
-          <MainImage src={imageUrl} alt="Main performance image" />
+          <MobileImage src={imageUrl} alt="Main performance image" />
           <Title>J.J. Albritton</Title>
           <Subtitle>Singer, guitarist, solo entertainer in Bradenton, FL.</Subtitle>
           <Subtitle>941-209-8340</Subtitle>
           <Subtitle>jj@jjalbritton.com</Subtitle>
-          <MobileButton href="https://youtu.be/AeQWwXxScQs">Demo Video</MobileButton>
+          <MobileButton href={demoVidUrl}>Demo Video</MobileButton>
           <MobileButton href="/calendar">View My Calendar</MobileButton>
         </MobileDiv>
       ) : (
@@ -107,7 +113,7 @@ function Home() {
           <Subtitle>Singer, guitarist, solo entertainer in Bradenton, FL.</Subtitle>
           <Subtitle>941-209-8340</Subtitle>
           <Subtitle>jj@jjalbritton.com</Subtitle>
-          <Button href="https://youtu.be/AeQWwXxScQs">Demo Video</Button>
+          <Button href={demoVidUrl} target="_blank">Demo Video</Button>
           <Button href="/calendar">View My Calendar</Button>
         </>
       )}
